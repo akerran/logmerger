@@ -9,6 +9,7 @@ each log file has entries in format "posix_timestamp some_message\n"
 g++ logmerger.cpp -o logmerger -std=c++2a
 
 # execution example
+```
 // three initial log files, some of them contain timestamp duplicates
 user:~/cpp_stuff$ cat /tmp/logs/sys1.log 
 1700512985 message1
@@ -43,5 +44,5 @@ user:~/cpp_stuff$ cat /tmp/merged.log
 1700513095 message2
 1700513096 duplicate timestamp from sys3.log
 1700513096 message1
-
+```
 
